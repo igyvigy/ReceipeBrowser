@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ReceipeBrowser
 //
-//  Created by Andrii on 5/6/16.
+//  Created by Andrii on 5/8/16.
 //  Copyright © 2016 Andrii. All rights reserved.
 //
 
@@ -24,7 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
         let masterNavigationController = splitViewController.viewControllers[0] as! UINavigationController
         let controller = masterNavigationController.topViewController as! MasterViewController
-        controller.managedObjectContext = self.managedObjectContext
+        
+        Storage.sharedInstance.instanitiateReceipeControllerWithDelegate(managedObjectContext, delegate: controller)
+        
+        UISearchBar.appearance().barTintColor = UIColor.darkGrayColor()
+        UISearchBar.appearance().tintColor = UIColor.whiteColor()
+        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.lightGrayColor()
+        
         return true
     }
 
@@ -57,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
         guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
-        if topAsDetailController.detailItem == nil {
+        if topAsDetailController.receipe == nil {
             // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
             return true
         }

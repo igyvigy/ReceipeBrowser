@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5F523231CDE0114004E5336 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F523221CDE0114004E5336 /* Storage.swift */; };
+		B5F523251CDE2D4D004E5336 /* DialogHelper+MultiActionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F523241CDE2D4D004E5336 /* DialogHelper+MultiActionAlert.swift */; };
+		B5F523501CDE9102004E5336 /* ReceipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F5234F1CDE9102004E5336 /* ReceipeCell.swift */; };
+		B5F523521CDF3A99004E5336 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F523511CDF3A99004E5336 /* WebViewController.swift */; };
 		B5FDBD721CDD2E94005BFCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDBD711CDD2E94005BFCEC /* AppDelegate.swift */; };
 		B5FDBD751CDD2E94005BFCEC /* ReceipeBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5FDBD731CDD2E94005BFCEC /* ReceipeBrowser.xcdatamodeld */; };
 		B5FDBD771CDD2E94005BFCEC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDBD761CDD2E94005BFCEC /* MasterViewController.swift */; };
@@ -14,9 +18,15 @@
 		B5FDBD7C1CDD2E94005BFCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FDBD7A1CDD2E94005BFCEC /* Main.storyboard */; };
 		B5FDBD7E1CDD2E94005BFCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FDBD7D1CDD2E94005BFCEC /* Assets.xcassets */; };
 		B5FDBD811CDD2E94005BFCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FDBD7F1CDD2E94005BFCEC /* LaunchScreen.storyboard */; };
+		B5FDBD891CDD4293005BFCEC /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDBD881CDD4293005BFCEC /* APIController.swift */; };
+		B5FDBD8D1CDD520D005BFCEC /* Receipe+TempReceipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDBD8C1CDD520D005BFCEC /* Receipe+TempReceipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5F523221CDE0114004E5336 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		B5F523241CDE2D4D004E5336 /* DialogHelper+MultiActionAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DialogHelper+MultiActionAlert.swift"; sourceTree = "<group>"; };
+		B5F5234F1CDE9102004E5336 /* ReceipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceipeCell.swift; sourceTree = "<group>"; };
+		B5F523511CDF3A99004E5336 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B5FDBD6E1CDD2E94005BFCEC /* ReceipeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceipeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FDBD711CDD2E94005BFCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5FDBD741CDD2E94005BFCEC /* ReceipeBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReceipeBrowser.xcdatamodel; sourceTree = "<group>"; };
@@ -26,6 +36,8 @@
 		B5FDBD7D1CDD2E94005BFCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FDBD801CDD2E94005BFCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5FDBD821CDD2E94005BFCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FDBD881CDD4293005BFCEC /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		B5FDBD8C1CDD520D005BFCEC /* Receipe+TempReceipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Receipe+TempReceipe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,12 @@
 				B5FDBD711CDD2E94005BFCEC /* AppDelegate.swift */,
 				B5FDBD761CDD2E94005BFCEC /* MasterViewController.swift */,
 				B5FDBD781CDD2E94005BFCEC /* DetailViewController.swift */,
+				B5F523511CDF3A99004E5336 /* WebViewController.swift */,
+				B5FDBD881CDD4293005BFCEC /* APIController.swift */,
+				B5FDBD8C1CDD520D005BFCEC /* Receipe+TempReceipe.swift */,
+				B5F523221CDE0114004E5336 /* Storage.swift */,
+				B5F523241CDE2D4D004E5336 /* DialogHelper+MultiActionAlert.swift */,
+				B5F5234F1CDE9102004E5336 /* ReceipeCell.swift */,
 				B5FDBD7A1CDD2E94005BFCEC /* Main.storyboard */,
 				B5FDBD7D1CDD2E94005BFCEC /* Assets.xcassets */,
 				B5FDBD7F1CDD2E94005BFCEC /* LaunchScreen.storyboard */,
@@ -143,8 +161,14 @@
 			files = (
 				B5FDBD751CDD2E94005BFCEC /* ReceipeBrowser.xcdatamodeld in Sources */,
 				B5FDBD721CDD2E94005BFCEC /* AppDelegate.swift in Sources */,
+				B5F523231CDE0114004E5336 /* Storage.swift in Sources */,
 				B5FDBD771CDD2E94005BFCEC /* MasterViewController.swift in Sources */,
 				B5FDBD791CDD2E94005BFCEC /* DetailViewController.swift in Sources */,
+				B5F523521CDF3A99004E5336 /* WebViewController.swift in Sources */,
+				B5F523251CDE2D4D004E5336 /* DialogHelper+MultiActionAlert.swift in Sources */,
+				B5F523501CDE9102004E5336 /* ReceipeCell.swift in Sources */,
+				B5FDBD891CDD4293005BFCEC /* APIController.swift in Sources */,
+				B5FDBD8D1CDD520D005BFCEC /* Receipe+TempReceipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +285,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iGy.com.ReceipeBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -272,6 +297,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iGy.com.ReceipeBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -294,6 +320,7 @@
 				B5FDBD871CDD2E94005BFCEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
